@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tpjava;
+package options;
 
 import java.io.Serializable;
 import java.util.Scanner;
@@ -10,24 +10,24 @@ import java.util.Scanner;
  * @author flkol
  *
  */
-public class BarreDeToit implements Option,Serializable {
+public class Climatisation implements Option,Serializable {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 2356087208171846814L;
+	private static final long serialVersionUID = 7648994829704488831L;
 	private Double prix;
 
-	public BarreDeToit(Double prix) {
+	public Climatisation(Double prix) {
 		this.prix = prix;
 	}
 
-	public BarreDeToit() {
+	public Climatisation() {
 		Scanner sc = new Scanner(System.in);
 		boolean b = false;
 		do {
 			try {
-				System.out.print("Entrez le prix des barres de toit: ");
+				System.out.print("Entrez le prix de la climatisation: ");
 				this.prix = sc.nextDouble();
 				b = false;
 			} catch (Exception e) {
@@ -36,15 +36,16 @@ public class BarreDeToit implements Option,Serializable {
 				b = true;
 			}
 		} while (b);
+
 	}
 
 	public String toString() {
-		return "Barre de toit ("+prix+"€)";
-		
+		return "Climatisation (" + prix + "€)";
+
 	}
-	
+
 	public double getPrix() {
-		
+
 		return this.prix;
 	}
 

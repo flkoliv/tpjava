@@ -1,7 +1,10 @@
-package tpjava;
+package garage;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import vehicules.Vehicule;
+
 import java.io.Serializable;
 
 public class Garage implements Serializable{

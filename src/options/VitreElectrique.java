@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tpjava;
+package options;
 
 import java.io.Serializable;
 import java.util.Scanner;
@@ -10,20 +10,24 @@ import java.util.Scanner;
  * @author flkol
  *
  */
-public class GPS implements Option,Serializable{
+public class VitreElectrique implements Option,Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1302810837687063845L;
 	private Double prix;
 
-	public GPS(Double prix) {
+	public VitreElectrique(Double prix) {
 		this.prix = prix;
 	}
 
-	public GPS() {
-		final Scanner sc = new Scanner(System.in);
+	public VitreElectrique() {
+		Scanner sc = new Scanner(System.in);
 		boolean b = false;
 		do {
 			try {
-				System.out.print("Entrez le prix du GPS : ");
+				System.out.print("Entrez le prix des vitres electriques : ");
 				this.prix = sc.nextDouble();
 				b = false;
 			} catch (Exception e) {
@@ -36,12 +40,11 @@ public class GPS implements Option,Serializable{
 	}
 
 	public String toString() {
-		return "GPS (" + prix + "€)";
+		return "Vitres électriques (" + prix + "€)";
 
 	}
 
 	public double getPrix() {
-
 		return this.prix;
 	}
 

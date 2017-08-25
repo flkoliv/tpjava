@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tpjava;
+package options;
 
 import java.io.Serializable;
 import java.util.Scanner;
@@ -10,24 +10,24 @@ import java.util.Scanner;
  * @author flkol
  *
  */
-public class Climatisation implements Option,Serializable {
+public class SiegeChauffant implements Option,Serializable {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 7648994829704488831L;
+	private static final long serialVersionUID = 810086395993906933L;
 	private Double prix;
 
-	public Climatisation(Double prix) {
+	public SiegeChauffant(Double prix) {
 		this.prix = prix;
 	}
 
-	public Climatisation() {
-		Scanner sc = new Scanner(System.in);
+	public SiegeChauffant() {
+		final Scanner sc = new Scanner(System.in);
 		boolean b = false;
 		do {
 			try {
-				System.out.print("Entrez le prix de la climatisation: ");
+				System.out.print("Entrez le prix des sièges chauffants : ");
 				this.prix = sc.nextDouble();
 				b = false;
 			} catch (Exception e) {
@@ -40,12 +40,12 @@ public class Climatisation implements Option,Serializable {
 	}
 
 	public String toString() {
-		return "Climatisation (" + prix + "€)";
+		return "Sièges chauffants (" + prix + "€)";
 
 	}
 
 	public double getPrix() {
-
+		// TODO Auto-generated method stub
 		return this.prix;
 	}
 

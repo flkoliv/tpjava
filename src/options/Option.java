@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tpjava;
+package options;
 
 /**
  * @author flkol

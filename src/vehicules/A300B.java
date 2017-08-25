@@ -1,4 +1,4 @@
-package tpjava;
+package vehicules;
 
 import java.io.Serializable;
 
