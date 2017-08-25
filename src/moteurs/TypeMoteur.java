@@ -3,13 +3,12 @@
  */
 package moteurs;
 
-import java.io.Serializable;
 
 /**
  * @author flkol
  *
  */
-public enum TypeMoteur implements Serializable{
+public enum TypeMoteur {
 	DIESEL("DIESEL"),
 	ESSENCE("ESSENCE"),
 	HYBRIDE("HYBRIDE"),

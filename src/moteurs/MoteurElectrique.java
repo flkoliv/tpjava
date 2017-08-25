@@ -3,18 +3,16 @@
  */
 package moteurs;
 
-import java.io.Serializable;
 
 /**
  * @author flkol
  *
  */
-public class MoteurElectrique extends Moteur implements Serializable {
+public class MoteurElectrique extends Moteur {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 7231939678638045449L;
 
 	public MoteurElectrique(String cylindre, Double prix) {
 		super(cylindre, prix);

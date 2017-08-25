@@ -3,13 +3,12 @@
  */
 package vehicules;
 
-import java.io.Serializable;
 
 /**
  * @author flkol
  *
  */
-public enum Marque implements Serializable {
+public enum Marque  {
 	RENO("RENO"), PIGEOT("PIGEOT"), TROEN("TROEN");
 
 	private String marque;
