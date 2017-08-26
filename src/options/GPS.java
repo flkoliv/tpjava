@@ -4,7 +4,7 @@
 package options;
 
 import java.io.Serializable;
-import java.util.Scanner;
+
 
 /**
  * @author flkol
@@ -12,6 +12,10 @@ import java.util.Scanner;
  */
 public class GPS implements Option,Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6679690409756286986L;
 	private Double prix;
 
 	public GPS(Double prix) {

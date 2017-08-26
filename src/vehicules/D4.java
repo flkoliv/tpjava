@@ -6,6 +6,11 @@ public class D4 extends Vehicule {
 	/**
 	 * 
 	 */
+	private static final long serialVersionUID = -7572368127893054630L;
+
+	/**
+	 * 
+	 */
 	
 
 	public D4() {

@@ -4,7 +4,6 @@
 package options;
 
 import java.io.Serializable;
-import java.util.Scanner;
 
 /**
  * @author flkol
