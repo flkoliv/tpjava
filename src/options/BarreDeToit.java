@@ -22,29 +22,11 @@ public class BarreDeToit implements Option,Serializable {
 		this.prix = prix;
 	}
 
-	public BarreDeToit() {
-		Scanner sc = new Scanner(System.in);
-		boolean b = false;
-		do {
-			try {
-				System.out.print("Entrez le prix des barres de toit: ");
-				this.prix = sc.nextDouble();
-				b = false;
-			} catch (Exception e) {
-				System.out.println("invalide !!!");
-				sc.next();
-				b = true;
-			}
-		} while (b);
-	}
-
 	public String toString() {
-		return "Barre de toit ("+prix+"€)";
-		
+		return "Barre de toit ("+prix+"€)";	
 	}
 	
-	public double getPrix() {
-		
+	public double getPrix() {	
 		return this.prix;
 	}
 

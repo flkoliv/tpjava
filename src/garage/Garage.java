@@ -18,7 +18,7 @@ public class Garage implements Serializable{
 	private List<Vehicule> voitures = new ArrayList<Vehicule>();
 
 	public void add(Vehicule voit) {
-		this.voitures.add(voit);
+		voitures.add(voit);
 
 	}
 
@@ -43,7 +43,7 @@ public class Garage implements Serializable{
 	}
 
 	public void addVoiture(Vehicule voit) {
-		this.voitures.add(voit);
+		voitures.add(voit);
 
 	}
 }

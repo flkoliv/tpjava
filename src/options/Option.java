@@ -4,7 +4,7 @@
 package options;
 
 /**
- * @author flkol
+ * @author flkoliv
  *
  */
 public interface Option {

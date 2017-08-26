@@ -37,18 +37,18 @@ public class Main {
 	public static void main(String[] args) {
 
 		Garage garage = new Garage();
-		Scanner sc = new Scanner(System.in);
-		
+		final Scanner sc = new Scanner(System.in);
+
 		String str = new String();
 		ObjectOutputStream oos = null;
 		ObjectInputStream ois = null;
-		
+
 		try {
 			final FileInputStream fichier = new FileInputStream("garage.ser");
 			ois = new ObjectInputStream(fichier);
 			garage = (Garage) ois.readObject();
 		} catch (final java.io.IOException e) {
-			//e.printStackTrace();
+			// e.printStackTrace();
 			System.out.println("Aucune voiture sauvegardée !");
 		} catch (final ClassNotFoundException e) {
 			e.printStackTrace();
@@ -66,7 +66,7 @@ public class Main {
 			System.out.print("Voulez-vous ajouter un véhicule ? (o/n) : ");
 			str = sc.nextLine();
 			if (str.equals("o")) {
-				creerVehicule(garage);
+				garage.addVoiture(creerVehicule(sc));
 			} else if (str.equals("n")) {
 				System.out.println("Au revoir !");
 			} else {
@@ -96,12 +96,13 @@ public class Main {
 		sc.close();
 	}
 
-	private static void creerVehicule(Garage garage) {
-		Scanner sc = new Scanner(System.in);
+	private static Vehicule creerVehicule(Scanner sc) {
+
 		String str, choix = new String();
 		Vehicule vehicule = null;
 		String descriptionMoteur = null;
-		Double prixMotorisation = 0d;
+		Double prixMotorisation = 0d; 
+		Double prixOption = 0d;
 		Boolean test = true;
 
 		do {
@@ -172,27 +173,40 @@ public class Main {
 			if (!str.equals("1") && !str.equals("2") && !str.equals("3") && !str.equals("4") && !str.equals("5")
 					&& !str.equals("6")) {
 				System.out.print("Erreur ! ");
-			} else {
+			}else if (str.equals("6")) {}	
+			else {
+				test = true;
+				do {
+					try {
+						System.out.print("Prix de l'option : ");
+						prixOption = sc.nextDouble();
+						sc.nextLine();
+						test = false;
+					} catch (Exception e) {
+						System.out.print("Erreur ! ");
+						sc.nextLine();	
+					}
+
+				} while (test);
 				switch (str) {
 				case "1":
-					vehicule.addOption(new GPS());
+					vehicule.addOption(new GPS(prixOption));
 					break;
 				case "2":
-					vehicule.addOption(new BarreDeToit());
+					vehicule.addOption(new BarreDeToit(prixOption));
 					break;
 				case "3":
-					vehicule.addOption(new Climatisation());
+					vehicule.addOption(new Climatisation(prixOption));
 					break;
 				case "4":
-					vehicule.addOption(new SiegeChauffant());
+					vehicule.addOption(new SiegeChauffant(prixOption));
 					break;
 				case "5":
-					vehicule.addOption(new VitreElectrique());
+					vehicule.addOption(new VitreElectrique(prixOption));
 				}
 			}
 		} while (!str.equals("6"));
-
-		garage.addVoiture(vehicule);
+		return vehicule;
 	}
 
 }
