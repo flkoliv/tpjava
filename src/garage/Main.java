@@ -101,7 +101,7 @@ public class Main {
 		String str, choix = new String();
 		Vehicule vehicule = null;
 		String descriptionMoteur = null;
-		Double prixMotorisation = 0d; 
+		Double prixMotorisation = 0d;
 		Double prixOption = 0d;
 		Boolean test = true;
 
@@ -173,8 +173,8 @@ public class Main {
 			if (!str.equals("1") && !str.equals("2") && !str.equals("3") && !str.equals("4") && !str.equals("5")
 					&& !str.equals("6")) {
 				System.out.print("Erreur ! ");
-			}else if (str.equals("6")) {}	
-			else {
+			} else if (str.equals("6")) {
+			} else {
 				test = true;
 				do {
 					try {
@@ -184,7 +184,7 @@ public class Main {
 						test = false;
 					} catch (Exception e) {
 						System.out.print("Erreur ! ");
-						sc.nextLine();	
+						sc.nextLine();
 					}
 
 				} while (test);

@@ -3,7 +3,6 @@
  */
 package moteurs;
 
-
 /**
  * @author flkol
  *
@@ -23,7 +22,5 @@ public class MoteurElectrique extends Moteur {
 		super(cylindre, prix);
 		super.type = TypeMoteur.ELECTRIQUE;
 	}
-
-	
 
 }

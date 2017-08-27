@@ -3,13 +3,11 @@
  */
 package moteurs;
 
-
-
 /**
  * @author flkol
  *
  */
-public class MoteurDiesel extends Moteur  {
+public class MoteurDiesel extends Moteur {
 
 	/**
 	 * 
@@ -24,7 +22,5 @@ public class MoteurDiesel extends Moteur  {
 		super(cylindre, prix);
 		super.type = TypeMoteur.DIESEL;
 	}
-
-	
 
 }

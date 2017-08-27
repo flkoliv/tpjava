@@ -9,7 +9,7 @@ import java.io.Serializable;
  * @author flkol
  *
  */
-public class BarreDeToit implements Option,Serializable {
+public class BarreDeToit implements Option, Serializable {
 
 	/**
 	 * 
@@ -22,10 +22,10 @@ public class BarreDeToit implements Option,Serializable {
 	}
 
 	public String toString() {
-		return "Barre de toit ("+prix+"€)";	
+		return "Barre de toit (" + prix + "€)";
 	}
-	
-	public double getPrix() {	
+
+	public double getPrix() {
 		return this.prix;
 	}
 

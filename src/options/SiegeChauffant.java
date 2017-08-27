@@ -9,7 +9,7 @@ import java.io.Serializable;
  * @author flkol
  *
  */
-public class SiegeChauffant implements Option,Serializable {
+public class SiegeChauffant implements Option, Serializable {
 
 	/**
 	 * 
@@ -20,7 +20,6 @@ public class SiegeChauffant implements Option,Serializable {
 	public SiegeChauffant(Double prix) {
 		this.prix = prix;
 	}
-
 
 	public String toString() {
 		return "Sièges chauffants (" + prix + "€)";

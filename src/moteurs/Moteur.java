@@ -9,7 +9,7 @@ import java.io.Serializable;
  * @author flkol
  *
  */
-public abstract class Moteur implements Serializable{
+public abstract class Moteur implements Serializable {
 
 	/**
 	 * 
@@ -22,7 +22,7 @@ public abstract class Moteur implements Serializable{
 	public Moteur(String cylindre, Double prix) {
 		this.cylindre = cylindre;
 		this.prix = prix;
-		
+
 	}
 
 	public String toString() {

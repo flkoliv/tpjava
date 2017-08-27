@@ -3,7 +3,6 @@
  */
 package moteurs;
 
-
 /**
  * @author flkol
  *
@@ -23,9 +22,5 @@ public class MoteurEssence extends Moteur {
 		super(cylindre, prix);
 		super.type = TypeMoteur.ESSENCE;
 	}
-
-	
-
-	
 
 }

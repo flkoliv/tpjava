@@ -5,12 +5,11 @@ package options;
 
 import java.io.Serializable;
 
-
 /**
  * @author flkol
  *
  */
-public class GPS implements Option,Serializable{
+public class GPS implements Option, Serializable {
 
 	/**
 	 * 

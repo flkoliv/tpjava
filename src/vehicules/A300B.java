@@ -1,6 +1,5 @@
 package vehicules;
 
-
 public class A300B extends Vehicule {
 
 	/**
@@ -16,6 +15,5 @@ public class A300B extends Vehicule {
 		super.nomMarque = Marque.PIGEOT;
 		super.nom = "A300B";
 	}
-	
-	
+
 }

@@ -3,12 +3,11 @@
  */
 package vehicules;
 
-
 /**
  * @author flkol
  *
  */
-public enum Marque  {
+public enum Marque {
 	RENO("RENO"), PIGEOT("PIGEOT"), TROEN("TROEN");
 
 	private String marque;

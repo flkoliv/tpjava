@@ -7,7 +7,7 @@ import vehicules.Vehicule;
 
 import java.io.Serializable;
 
-public class Garage implements Serializable{
+public class Garage implements Serializable {
 
 	/**
 	 * 
@@ -24,10 +24,10 @@ public class Garage implements Serializable{
 
 	public String toString() {
 		String str = new String();
-		str = "***************************\n";
-		str+= "*  Garage Openclassrooms  *\n";
-		str+= "***************************\n";
-				
+		str =  "***************************\n";
+		str += "*  Garage Openclassrooms  *\n";
+		str += "***************************\n";
+
 		if (voitures.size() > 0) {
 			for (int i = 0; i < voitures.size(); i++) {
 				str = str + voitures.get(i).toString();

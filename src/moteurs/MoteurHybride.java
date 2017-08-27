@@ -3,7 +3,6 @@
  */
 package moteurs;
 
-
 /**
  * @author flkol
  *
@@ -24,5 +23,4 @@ public class MoteurHybride extends Moteur {
 		super.type = TypeMoteur.HYBRIDE;
 	}
 
-	
 }

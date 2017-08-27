@@ -9,7 +9,7 @@ import java.io.Serializable;
  * @author flkol
  *
  */
-public class Climatisation implements Option,Serializable {
+public class Climatisation implements Option, Serializable {
 
 	/**
 	 * 
@@ -20,7 +20,6 @@ public class Climatisation implements Option,Serializable {
 	public Climatisation(Double prix) {
 		this.prix = prix;
 	}
-
 
 	public String toString() {
 		return "Climatisation (" + prix + "€)";

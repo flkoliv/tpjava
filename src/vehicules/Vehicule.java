@@ -8,7 +8,7 @@ import options.Option;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Vehicule implements Serializable{
+public class Vehicule implements Serializable {
 
 	/**
 	 * 
@@ -23,18 +23,16 @@ public class Vehicule implements Serializable{
 	public String toString() {
 		String str = new String();
 		str = "+ Voiture " + nomMarque + " : " + nom + " " + moteur + " ";
-		if (options.size()>0) {
+		if (options.size() > 0) {
 			str = str + "[";
-			for(int i = 0; i < options.size(); i++)
-		    {
-		      str = str + options.get(i).toString();
-		      if (i != (options.size()-1)) {
-		    	  str = str +", ";
-		      }
-		    }	
+			for (int i = 0; i < options.size(); i++) {
+				str = str + options.get(i).toString();
+				if (i != (options.size() - 1)) {
+					str = str + ", ";
+				}
+			}
 			str = str + "] ";
-		}
-		else {
+		} else {
 			str = str + "[] ";
 		}
 		str = str + "pour un prix total de " + prix + "€.";

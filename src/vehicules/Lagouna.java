@@ -1,6 +1,5 @@
 package vehicules;
 
-
 public class Lagouna extends Vehicule {
 
 	/**
@@ -16,6 +15,5 @@ public class Lagouna extends Vehicule {
 		super.nomMarque = Marque.RENO;
 		super.nom = "Lagouna";
 	}
-	
-	
+
 }
