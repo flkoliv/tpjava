@@ -514,8 +514,6 @@
               <body>new ArrayList&lt;Option>()</body>
             </defaultValue>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_8Nc28Yr7EeeMIqF6KDaGAA" name="marque" type="_g4PHAIqzEeeOxIZbH9JuyQ" association="_8Nbo0Ir7EeeMIqF6KDaGAA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_DD3VI4r8EeeMIqF6KDaGAA" name="moteur" type="_BbBZkIqwEeeOxIZbH9JuyQ" association="_DD3VIIr8EeeMIqF6KDaGAA"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_gzJysIqzEeeOxIZbH9JuyQ" name="Vehicule implements Serializable" client="_gyfEUIqzEeeOxIZbH9JuyQ" supplier="_8zbjYIqvEeeOxIZbH9JuyQ" contract="_8zbjYIqvEeeOxIZbH9JuyQ"/>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gznFsIqzEeeOxIZbH9JuyQ" name="toString" specification="_gzkCYIqzEeeOxIZbH9JuyQ">
             <language>JAVA</language>
@@ -687,23 +685,32 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_hK5PkIr7EeeMIqF6KDaGAA" name="vehicule" type="_gyfEUIqzEeeOxIZbH9JuyQ" aggregation="shared" association="_hKyh4Ir7EeeMIqF6KDaGAA"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_hK3aYIr7EeeMIqF6KDaGAA" name="garage" type="_8zZuMIqvEeeOxIZbH9JuyQ" association="_hKyh4Ir7EeeMIqF6KDaGAA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_8Nbo0Ir7EeeMIqF6KDaGAA" memberEnd="_8Nc28Yr7EeeMIqF6KDaGAA _8NdeAIr7EeeMIqF6KDaGAA">
+    <packagedElement xmi:type="uml:Association" xmi:id="_8Nbo0Ir7EeeMIqF6KDaGAA" memberEnd="_8Nc28Yr7EeeMIqF6KDaGAA _8NdeAIr7EeeMIqF6KDaGAA" navigableOwnedEnd="_8Nc28Yr7EeeMIqF6KDaGAA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8NcP4Ir7EeeMIqF6KDaGAA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8Nc28Ir7EeeMIqF6KDaGAA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_8NdeAIr7EeeMIqF6KDaGAA" name="vehicule" type="_gyfEUIqzEeeOxIZbH9JuyQ" association="_8Nbo0Ir7EeeMIqF6KDaGAA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8Nc28Yr7EeeMIqF6KDaGAA" name="marque" type="_g4PHAIqzEeeOxIZbH9JuyQ" association="_8Nbo0Ir7EeeMIqF6KDaGAA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_DD3VIIr8EeeMIqF6KDaGAA" memberEnd="_DD3VI4r8EeeMIqF6KDaGAA _DD38MIr8EeeMIqF6KDaGAA">
+    <packagedElement xmi:type="uml:Association" xmi:id="_DD3VIIr8EeeMIqF6KDaGAA" memberEnd="_DD3VI4r8EeeMIqF6KDaGAA _DD38MIr8EeeMIqF6KDaGAA" navigableOwnedEnd="_DD3VI4r8EeeMIqF6KDaGAA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DD3VIYr8EeeMIqF6KDaGAA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DD3VIor8EeeMIqF6KDaGAA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_DD38MIr8EeeMIqF6KDaGAA" name="vehicule" type="_gyfEUIqzEeeOxIZbH9JuyQ" association="_DD3VIIr8EeeMIqF6KDaGAA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DD3VI4r8EeeMIqF6KDaGAA" name="moteur" type="_BbBZkIqwEeeOxIZbH9JuyQ" association="_DD3VIIr8EeeMIqF6KDaGAA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_pBgxEIr8EeeMIqF6KDaGAA" memberEnd="_pBhYIor8EeeMIqF6KDaGAA _pBh_MIr8EeeMIqF6KDaGAA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pBhYIIr8EeeMIqF6KDaGAA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pBhYIYr8EeeMIqF6KDaGAA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_pBh_MIr8EeeMIqF6KDaGAA" name="moteur" type="_BbBZkIqwEeeOxIZbH9JuyQ" association="_pBgxEIr8EeeMIqF6KDaGAA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_F3VosIsEEeeMIqF6KDaGAA" memberEnd="_F3Xd4osEEeeMIqF6KDaGAA _F3YsAIsEEeeMIqF6KDaGAA" navigableOwnedEnd="_F3Xd4osEEeeMIqF6KDaGAA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_F3Xd4IsEEeeMIqF6KDaGAA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_F3Xd4YsEEeeMIqF6KDaGAA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_F3Xd4osEEeeMIqF6KDaGAA" name="option" type="_ZYZGwIqyEeeOxIZbH9JuyQ" association="_F3VosIsEEeeMIqF6KDaGAA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_F3YsAIsEEeeMIqF6KDaGAA" name="vehicule" type="_gyfEUIqzEeeOxIZbH9JuyQ" association="_F3VosIsEEeeMIqF6KDaGAA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-JE9IIquEeeOxIZbH9JuyQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-JGLQIquEeeOxIZbH9JuyQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
